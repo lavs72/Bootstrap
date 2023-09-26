@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buttons and Badges</title>
+    <!-- Include Bootstrap CSS -->
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <style>
+        pre,p{
+            background-color:aqua;
+            font-size: 22px;
+        }
+        span,details,button{
+            font-size:22px;
+        }
+    </style>
+    <div class="container">
+        <!-- Button with Badge -->
+        <h2><u>Badge</u></h2>
+        
+        <!-- Description -->
+        <p>Badges can be used as part of links of buttons to provide a counter.</p>
+        <details>
+            <summary>View Code</summary>
+            <pre>
+&lt;button type="button" class="btn btn-primary"&gt;
+  Notifications
+  &lt;span class="badge text-bg-secondary"&gt;
+    4
+  &lt;/span&gt;
+&lt;/button&gt;
+</pre>
+</details>
+<details>
+    <summary>View Output</summary>
+    <div>
+        <!-- Button with Badge -->
+        <button type="button" class="btn btn-primary">
+            Notifications
+            <span class="badge text-bg-secondary">
+              4
+            </span>
+          </button>
+    </div>
+    </details>
+        <h3>Positioned</h3>
+        <details>
+            <summary>View Code</summary>
+            <pre>
+&lt;button type="button" class="btn btn-primary position-relative"&gt;
+  Inbox
+  &lt;span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"&gt;
+    99+
+    &lt;span class="visually-hidden"&gt;unread messages&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/button&gt;
+</pre>
+</details>
+<details>
+    <summary>View Output</summary>
+    <div>
+        <!-- Button with Badge -->
+        <button type="button" class="btn btn-primary position-relative">
+            Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                99+
+                <span class="visually-hidden">unread messages</span>
+            </span>
+        </button>
+        </div>
+    </details>
+    <details>
+        <summary>View Code</summary>
+        <pre>
+&lt;button type="button" class="btn btn-primary position-relative"&gt;
+  Profile
+  &lt;span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle"&gt;
+    &lt;span class="visually-hidden"&gt;New alerts&lt;/span&gt;
+  &lt;/span&gt;
+&lt;/button&gt;
+            </pre>
+        </details>
+
+        <details>
+            <summary>View Output</summary>
+            <div>
+                <!-- Button with Badge -->
+                
+
+                <button type="button" class="btn btn-primary position-relative">
+                    Profile
+                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                        <span class="visually-hidden">New alerts</span>
+                    </span>
+                </button>
+            </div>
+        </details>
+        <h3>Background colors</h3>
+        <!-- Badges -->
+        <details>
+            <summary>View Code</summary>
+            <pre>
+&lt;span class="badge text-bg-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="badge text-bg-secondary"&gt;Secondary&lt;/span&gt;
+&lt;span class="badge text-bg-success"&gt;Success&lt;/span&gt;
+&lt;span class="badge text-bg-danger"&gt;Danger&lt;/span&gt;
+&lt;span class="badge text-bg-warning"&gt;Warning&lt;/span&gt;
+&lt;span class="badge text-bg-info"&gt;Info&lt;/span&gt;
+&lt;span class="badge text-bg-light"&gt;Light&lt;/span&gt;
+&lt;span class="badge text-bg-dark"&gt;Dark&lt;/span&gt;
+            </pre>
+        </details>
+
+        <details>
+            <summary>View Output</summary>
+            <div>
+                <!-- Badges -->
+                <span class="badge text-bg-primary">Primary</span>
+                <span class="badge text-bg-secondary">Secondary</span>
+                <span class="badge text-bg-success">Success</span>
+                <span class="badge text-bg-danger">Danger</span>
+                <span class="badge text-bg-warning">Warning</span>
+                <span class="badge text-bg-info">Info</span>
+                <span class="badge text-bg-light">Light</span>
+                <span class="badge text-bg-dark">Dark</span>
+            </div>
+        </details>
+        <h3>Pill badges</h3>
+        <!-- Rounded Pill Badges -->
+        <details>
+            <summary>View Code</summary>
+            <pre>
+&lt;span class="badge rounded-pill text-bg-primary"&gt;Primary&lt;/span&gt;
+&lt;span class="badge rounded-pill text-bg-secondary"&gt;Secondary&lt;/span&gt;
+&lt;span class="badge rounded-pill text-bg-success"&gt;Success&lt;/span&gt;
+&lt;span class="badge rounded-pill text-bg-danger"&gt;Danger&lt;/span&gt;
+&lt;span class="badge rounded-pill text-bg-warning"&gt;Warning&lt;/span&gt;
+&lt;span class="badge rounded-pill text-bg-info"&gt;Info&lt;/span&gt;
+&lt;span class="badge rounded-pill text-bg-light"&gt;Light&lt;/span&gt;
+&lt;span class="badge rounded-pill text-bg-dark"&gt;Dark&lt;/span&gt;
+            </pre>
+        </details>
+
+        <details>
+            <summary>View Output</summary>
+            <div>
+                <!-- Rounded Pill Badges -->
+                <span class="badge rounded-pill text-bg-primary">Primary</span>
+                <span class="badge rounded-pill text-bg-secondary">Secondary</span>
+                <span class="badge rounded-pill text-bg-success">Success</span>
+                <span class="badge rounded-pill text-bg-danger">Danger</span>
+                <span class="badge rounded-pill text-bg-warning">Warning</span>
+                <span class="badge rounded-pill text-bg-info">Info</span>
+                <span class="badge rounded-pill text-bg-light">Light</span>
+                <span class="badge rounded-pill text-bg-dark">Dark</span>
+            </div>
+        </details>
+    </div>
+
+    <!-- Include Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
